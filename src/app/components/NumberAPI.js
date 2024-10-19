@@ -11,8 +11,8 @@ const NumberAPI = () => {
       const fact = await response.text();
       setNumberFact(fact);
     } catch (error) {
-      console.error('Error fetching number fact:', error);
-      setNumberFact('Lo siento, no pude obtener un dato numérico. Por favor, intenta de nuevo.');
+      console.error('Error ', error);
+      setNumberFact('Error ');
     }
   };
 
@@ -31,3 +31,4 @@ const NumberAPI = () => {
 };
 
 export default NumberAPI;
+
